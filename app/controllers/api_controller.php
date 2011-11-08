@@ -14,8 +14,7 @@ class ApiController extends AppController {
 	 * テスト通信用
 	 */
 	function test() {
-		$params = $this->params['form']['params'];
-		if(empty($params)){
+		if(empty($this->params['form']['params'])){
 			$this->_jsonOutPut(array(), false);
 		} else {
 			$this->_jsonOutPut(array());
